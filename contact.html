@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Viharis - Massage Tantriques Luxembourg Contact</title>
+   <meta name="description" content="Viharis : Bien-être et détente. Découvrez nos massages tantriques, massage 5 continents, méditations et formations pour revitaliser votre corps et votre esprit.">
+
+  <!-- 🔒 CSP fonctionnelle -->
+  <meta http-equiv="Content-Security-Policy"
+        content="
+          default-src 'none';
+          script-src 'self' https://cdn.jsdelivr.net https://maps.googleapis.com;
+          style-src 'self' https://fonts.googleapis.com https://maps.googleapis.com;
+          font-src 'self' https://fonts.gstatic.com;
+          img-src 'self' data: https:;
+          connect-src 'self' https://api.emailjs.com;
+          frame-src https://www.google.com https://maps.google.com;
+          frame-ancestors 'self';
+        ">
+  <meta http-equiv="Strict-Transport-Security"
+        content="max-age=63072000; includeSubDomains; preload">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+         <a href="/"><img src="images/viharis.webp" alt="Viharis Logo" width="200" height="100"></a>
+          </div>
+        <nav class="nav" role="navigation" aria-label="Menu principal">
+            <!--<a href="prestations.html" class="btn">Offres & Tarif</a> -->
+            <a href="/" class="btn">Acceuil</a>
+            <a href="newsletter.html" class="btn">Newsletter</a>
+        </nav>
+    </header>
+ 
+    <!-- MAIN CONTENT -->
+    <main role="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/contact_hero.webp" alt="Contact" loading="lazy">
+               <div class="hero-text">
+                    <h1>Prenez contact avec nous</h1>
+                    <p></p>
+					 <a href="#welcome-section" class="btn">Découvrir</a>
+            </div>
+        </section>
+
+  <!-- SECTION INTRODUCTIVE -->
+  
+  <section class="welcome-section" id="welcome-section">
+    <div class="container">
+      <h2>Bienvenue sur la page contact</h2>
+      <p>
+        Vous avez une question, un projet ou simplement envie d’échanger ?
+Remplissez le formulaire ci-dessous.
+Nous vous répondrons dans les plus brefs délais !
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section class="special-section">
+    <div class="contact-wrapper">
+
+      <!-- FORMULAIRE -->
+      <div class="contact-form">
+        <h2>Envoyez-nous un message</h2>
+        <form id="contact-form">
+          <input type="hidden" name="from_name" value="Viharis.lu">
+          <input type="hidden" name="from_email" value="Viharisnoreply@gmail.com">
+          <input type="text" name="website" class="honeypot" autocomplete="off" tabindex="-1" placeholder="Ne pas remplir">
+          <input type="text" id="nom" name="user_name" placeholder="Prénom et nom" required>
+          <input type="email" id="email" name="user_email" placeholder="Votre email" required>
+
+          <div class="phone-field">
+            <select id="country-code" name="country_code" required>
+              <option value="+352">LU +352</option>
+              <option value="+33">FR +33</option>
+              <option value="+32">BE +32</option>
+            </select>
+            <input type="tel" id="telephone" name="user_phone" placeholder="Votre téléphone" required>
+          </div>
+
+          <select id="ContactType" name="contact_type" required>
+            <option value="">Sujet de votre demande</option>
+            <option value="Massage">Massage</option>
+            <option value="Méditation">Méditation</option>
+            <option value="Formation">Formation</option>
+            <option value="Autres">Autres</option>
+          </select>
+
+          <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
+
+          <label id="captcha-label" for="captcha">Entrez le résultat de : <strong>0 + 0</strong></label>
+          <input type="text" id="captcha" name="captcha" placeholder="Réponse" required>
+
+          <label class="checkbox-line">
+            <input type="checkbox" id="first_contact" name="first_contact">
+            <p>Inscrivez-vous à notre News Letter</p>
+          </label>
+
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+
+        <p style="font-size: 0.9em; color: #555;">
+          Les informations saisies dans ce formulaire sont utilisées uniquement pour répondre à votre demande. 
+          Elles sont conservées pendant 24 mois et ne sont pas partagées avec des tiers. 
+          Vous pouvez exercer vos droits en écrivant à 
+          <a href="mailto:viharislux@gmail.com">viharislux@gmail.com</a>
+        </p>
+      </div>
+
+      <!-- COLONNE DROITE -->
+      <div class="contact-info">
+        <h2>Nos coordonnées</h2>
+       <!-- <p><strong>Adresse :</strong><br>13 Am Sellerlach, 8525 Calmus Saeul, Luxembourg</p>
+        <p><strong>Téléphone :</strong><br><a href="tel:+352123456789" class="link">+352 12 34 56 789</a></p>-->
+        <p><strong>Email :</strong><br><a href="mailto:viharislux@gmail.com">viharislux@gmail.com</a>.</p>
+
+       <!-- <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2579.206959226262!2d5.963941776612361!3d49.72573007146292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eaad13f2904797%3A0x3b10ee2e0d24f87!2s13%20Am%20Sellerlach%2C%208525%20Calmus%20Saeul%2C%20Luxembourg!5e0!3m2!1sfr!2sfr!4v1667758096392!5m2!1sfr!2sfr" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+      </div>-->
+
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-wrapper">
+
+        <!-- Colonne Liens utiles -->
+        <div class="footer-col">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+               <!--   <li><a href="prestations.html">Offres</a></li>
+				<li><a href="tarif.html">Nos tarif</a></li>-->
+				<li><a href="apropos.html">A propos de nous</a></li>
+
+            </ul>
+			
+	
+        </div>
+
+        <!-- Colonne À propos -->
+        <div class="footer-col">
+      	<h3>Mentions légales</h3>
+            <ul>
+                <li><a href="rgpd.html">Politique de protection vie privée</a></li>
+                <li><a href="charte.html">Charte des masseurs</a></li>
+				<li><a href="condition.html">Condition générale de vente</a></li
+                </ul>
+     
+        </div>
+
+        <!-- Colonne Contact -->
+        <div class="footer-col">
+            <h3>Contactez-nous</h3>
+			  <ul>
+			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="newsletter.html">News letter</a></li>
+			  </ul>
+        </div>
+
+    </div>
+
+    <p class="footer-bottom">&copy; 2025 Viharis — Tous droits réservés - V 1.3</p>
+</footer>
+<script src="script.js"></script>
+<script src="contact.js"></script> <!-- ton JS de formulaire externe -->
+</body>
+</html>
+
+
+
+
