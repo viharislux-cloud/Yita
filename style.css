@@ -444,6 +444,19 @@ height: 350px;
 }
 
 
+	/* --- MAP du Contact form--- */
+	.map-container {
+	  margin-top: 15px;
+	  border-radius: 10px;
+	  overflow: hidden;
+	}
+
+	.map-container iframe {
+	  width: 50%;
+	  height: 250px;
+	  border: 0;
+	}
+
 /* --- MEDIA QUERIES --- */
 @media (max-width: 768px) {
 .welcome-section {
