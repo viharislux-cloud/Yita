@@ -4,6 +4,7 @@
   --primary-green-dark: #6495ED;
   --text-color: #333;
   --bg-color: #fff;
+  --bg-color-section: #fff;
   --light-bg: #fafafa;
   --shadow-color: rgba(0,0,0,0.1);
   --shadow-hover: rgba(0,0,0,0.15);
@@ -407,7 +408,7 @@ height: 350px;
 	}
 
 	.special-section .comment p {
-	  line-height: 1,5;
+	  line-height: 1.5;
 	  text-align: justify;
 	}
 
@@ -462,8 +463,8 @@ height: 350px;
 .welcome-section {
 	scroll-margin-top: 170px; /* hauteur du header */
 }
-  .hero-text h1 { font-size: 1,1rem; }
-  .hero-text p { font-size: 0,8rem; }
+  .hero-text h1 { font-size: 1.1rem; }
+  .hero-text p { font-size: 0.8rem; }
 .hero-text {
     max-width: 100%; /* pour éviter que ton texte soit trop cassé */
   }
