@@ -307,7 +307,8 @@ html {
   display: flex;
   flex-wrap: wrap;         /* permet aux sections de passer à la ligne si trop large */
   gap: 20px;               /* espace entre les sections */
-  justify-content: center; /* centre les sections si elles ne remplissent pas toute la ligne */
+  justify-content: flex-start;
+  align-items: center; /* centre les sections si elles ne remplissent pas toute la ligne */
   max-width: 1000px;       /* limite la largeur totale de la ligne */
   margin: 0 auto;          /* centre horizontalement dans la page */
 }
@@ -315,10 +316,15 @@ html {
 /*Format des Colonne*/
 /*----------------------------------------------------------------------------------------------*/
 .special-section {
-  flex: 1 1 200px;         /* largeur minimale 300px, peut grandir */
-  max-width: calc((1000px - 2 * 20px) / 4); /* largeur max par section si tu veux exactement 3 sections par ligne */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* contenu en haut */
+  
+  flex: 1 1 200px;
+  max-width: calc((1000px - 2 * 20px) / 4);
   box-sizing: border-box;
-  justify-content: flex-start;	
+
+ 
 /*----------------------------------------------------------------------------------------------*/
 }.special-section {
 	  background-color: var(--bg-color-Section); /*Fond*/
@@ -342,17 +348,20 @@ html {
 	/*----------------------------------------------------------------------------------------------*/
 	/*Format des Container*/
 	/*----------------------------------------------------------------------------------------------*/
-.special-section .container { display: flex; align-items: center; justify-content: flex-start; gap: 2rem; flex-wrap: wrap; }
+.special-section .container { display: flex; align-items: justify; justify-content: flex-start; gap: 1rem; flex-wrap: wrap; }
+.special-section .containerindex { display: flex;
+  flex-direction: column;  /* 🔥 empile tout */
+  align-items: center;     /* 🔥 centre horizontalement */
+  justify-content: justify; /* centre globalement */
+  gap: 1rem;
+}
 	/*----------------------------------------------------------------------------------------------*/
 	/*Format des photos dans les containers*/
 	/*----------------------------------------------------------------------------------------------*/
 
 	/* Image */
 	
-
-
 	.special-section .container .photo  img {
-
 	display: block;
 	width: 260px;
 	  height: auto;
@@ -373,8 +382,8 @@ html {
 		.special-section .container .photoMiniature  img {
 
   bottom: 20px;
-  right: 10px;
-  width: 120px; /* ajuste la taille selon ton design */
+  right: 50px;
+  width: 150px; /* ajuste la taille selon ton design */
   border-radius: 10px;
   opacity: 0.9; /* optionnel */
 }
@@ -385,14 +394,24 @@ html {
 /*----------------------------------------------------------------------------------------------*/
 
 	/* Texte */
-	.special-section .comment {
+	.special-section .comment  {
+	
+		flex:1;
+ max-width: 100vw;
+  width: 100%;
+
+	}
+	.special-section .commenttexte p  {
+	text-indent: 2rem;
 		flex:1;
  max-width: 100vw;
   width: 100%;
 
 	}
 	
+	
 		.special-section .commentindex {
+			text-indent: 2rem;
 height: 200x;
  max-width: 100vw;
   width: 100%;
