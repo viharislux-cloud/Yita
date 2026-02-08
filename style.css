@@ -318,6 +318,7 @@ html {
   flex: 1 1 200px;         /* largeur minimale 300px, peut grandir */
   max-width: calc((1000px - 2 * 20px) / 4); /* largeur max par section si tu veux exactement 3 sections par ligne */
   box-sizing: border-box;
+  justify-content: flex-start;	
 /*----------------------------------------------------------------------------------------------*/
 }.special-section {
 	  background-color: var(--bg-color-Section); /*Fond*/
