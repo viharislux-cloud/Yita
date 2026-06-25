@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://YITA.me/sitemap.xml
+Sitemap: https://yita.me/sitemap.xml
