@@ -145,6 +145,10 @@ html {
   animation-delay: 0.6s;
 }
 
+.hero-text .citation {
+  text-align: right;
+}
+
 /* BOUTON */
 .hero-text .btn {
   display: inline-block;
